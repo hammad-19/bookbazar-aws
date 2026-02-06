@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to BookBazar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styles */
+        .hero-section {
+            background: linear-gradient(135deg, #0d41fd 0%, #ff0080 100%);
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 50px;
+        }
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .card {
+            border: none;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            background-color: #343a40; /* Dark background matching the new footer */
+            color: white;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#">📚 BookBazar</a>
+            <div>
+                <a href="{{ url_for('login') }}" class="btn btn-outline-primary me-2">Login</a>
+                <a href="{{ url_for('signup') }}" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-3">Your Gateway to Knowledge 🚀</h1>
+            <p class="lead mb-4">Discover thousands of books at unbeatable prices. Join our community of readers today.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <a href="{{ url_for('signup') }}" class="btn btn-light btn-lg px-4 gap-3 fw-bold text-primary">Get Started</a>
+                <a href="{{ url_for('login') }}" class="btn btn-outline-light btn-lg px-4">Login</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <div class="card h-100 p-4 shadow-sm">
+                    <div class="card-body">
+                        <div class="feature-icon">📚</div>
+                        <h3 class="card-title">Huge Collection</h3>
+                        <p class="card-text text-muted">From timeless classics to modern bestsellers, find everything you need in one place.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 p-4 shadow-sm">
+                    <div class="card-body">
+                        <div class="feature-icon">🚀</div>
+                        <h3 class="card-title">Fast Delivery</h3>
+                        <p class="card-text text-muted">Order your favorite books and get them delivered to your doorstep in record time.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 p-4 shadow-sm">
+                    <div class="card-body">
+                        <div class="feature-icon">🔒</div>
+                        <h3 class="card-title">Secure Payment</h3>
+                        <p class="card-text text-muted">Shop with confidence using our secure and encrypted payment gateways.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="mb-3">
+                <a href="{{ url_for('index') }}" class="text-white text-decoration-none mx-2">Home</a>
+                <a href="{{ url_for('about') }}" class="text-white text-decoration-none mx-2">About Us</a>
+                <a href="{{ url_for('contact') }}" class="text-white text-decoration-none mx-2">Contact Us</a>
+                
+                {% if not session.get('user') %}
+                    <a href="{{ url_for('login') }}" class="text-white text-decoration-none mx-2">Login</a>
+                {% endif %}
+            </div>
+            <p class="mb-0 text-white-50">© 2026 BookBazar Inc. All rights reserved.</p>
+            <small class="text-white-50">Designed for Book Lovers</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

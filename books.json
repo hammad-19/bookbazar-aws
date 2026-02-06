@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "price": 10.99,
+        "image": "gatsby.jpg",
+        "description": "A classic novel of the Jazz Age, telling the story of the mysterious millionaire Jay Gatsby and his obsession with Daisy Buchanan.",
+        "stock": 50
+    },
+    {
+        "id": 2,
+        "title": "1984",
+        "author": "George Orwell",
+        "price": 8.99,
+        "image": "1984.jpg",
+        "description": "A dystopian social science fiction novel and cautionary tale about the dangers of totalitarianism, mass surveillance, and repressive regimentation.",
+        "stock": 50
+    },
+    {
+        "id": 3,
+        "title": "Python Crash Course",
+        "author": "Eric Matthes",
+        "price": 25.0,
+        "image": "python_crash.jpg",
+        "description": "A hands-on, project-based introduction to programming for those interested in learning Python. Perfect for beginners.",
+        "stock": 50
+    },
+    {
+        "id": 4,
+        "title": "The Alchemist",
+        "author": "Paulo Coelho",
+        "price": 12.5,
+        "image": "alchemist.jpg",
+        "description": "A magical story about Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure.",
+        "stock": 50
+    },
+    {
+        "id": 5,
+        "title": "Clean Code",
+        "author": "Robert C. Martin",
+        "price": 32.0,
+        "image": "clean_code.jpg",
+        "description": "Even bad code can function. But if code isn't clean, it can bring a development organization to its knees. A must-read for developers.",
+        "stock": 50
+    },
+    {
+        "id": 6,
+        "title": "Harry Potter",
+        "author": "J.K. Rowling",
+        "price": 14.99,
+        "image": "harry_potter.jpg",
+        "description": "Harry Potter, an orphan, discovers he is a wizard and enrolls in the Hogwarts School of Witchcraft and Wizardry.",
+        "stock": 50
+    },
+    {
+        "id": 7,
+        "title": "Lord of the Rings",
+        "author": "J.R.R. Tolkien",
+        "price": 19.99,
+        "image": "lord_of_rings.jpg",
+        "description": "The future of civilization rests in the fate of the One Ring, which has been lost for centuries. A powerful epic of good versus evil.",
+        "stock": 50
+    },
+    {
+        "id": 8,
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "price": 9.5,
+        "image": "mockingbird.jpg",
+        "description": "A novel about the serious issues of rape and racial inequality, told through the eyes of young Scout Finch in the American South.",
+        "stock": 50
+    },
+    {
+        "id": 9,
+        "title": "The Da Vinci Code",
+        "author": "Dan Brown",
+        "price": 11.25,
+        "image": "davinci_code.jpg",
+        "description": "A murder in the Louvre and clues in Da Vinci paintings lead to the discovery of a religious mystery protected by a secret society.",
+        "stock": 50
+    },
+    {
+        "id": 10,
+        "title": "Thinking, Fast and Slow",
+        "author": "Daniel Kahneman",
+        "price": 16.0,
+        "image": "think_fast.jpg",
+        "description": "The major New York Times bestseller that explains the two systems that drive the way we think: System 1 (fast) and System 2 (slow).",
+        "stock": 50
+    },
+    {
+        "id": 11,
+        "title": "Sapiens",
+        "author": "Yuval Noah Harari",
+        "price": 18.0,
+        "image": "sapiens.jpg",
+        "description": "From a renowned historian comes a groundbreaking narrative of humanity\u00e2\u20ac\u2122s creation and evolution\u00e2\u20ac\u201da #1 international bestseller.",
+        "stock": 50
+    },
+    {
+        "id": 12,
+        "title": "Atomic Habits",
+        "author": "James Clear",
+        "price": 15.5,
+        "image": "atomic_habits.jpg",
+        "description": "No matter your goals, Atomic Habits offers a proven framework for improving--every day. Learn how to form good habits and break bad ones.",
+        "stock": 50
+    },
+    {
+        "id": 13,
+        "title": "The Pragmatic Programmer",
+        "author": "Andrew Hunt",
+        "price": 29.99,
+        "image": "pragmatic_programmer.jpg",
+        "description": "One of the most significant books on software development, covering philosophy, approach, and techniques for keeping code flexible and easy to adapt.",
+        "stock": 50
+    },
+    {
+        "id": 14,
+        "title": "Dune",
+        "author": "Frank Herbert",
+        "price": 12.99,
+        "image": "dune.jpg",
+        "description": "Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, heir to a noble family tasked with ruling an inhospitable world where the only thing of value is the 'spice' melange.",
+        "stock": 50
+    },
+    {
+        "id": 15,
+        "title": "Rich Dad Poor Dad",
+        "author": "Robert Kiyosaki",
+        "price": 13.75,
+        "image": "rich_dad.jpg",
+        "description": "It advocates the importance of financial literacy, financial independence and building wealth through investing in assets.",
+        "stock": 50
+    },
+    {
+        "id": 16,
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "price": 10.5,
+        "image": "hobbit.jpg",
+        "description": "The timeless classic about Bilbo Baggins, a hobbit who is swept into an epic quest to reclaim the lost Dwarf Kingdom of Erebor.",
+        "stock": 50
+    },
+    {
+        "id": 17,
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "price": 7.99,
+        "image": "pride_prejudice.jpg",
+        "description": "A romantic novel of manners that follows the character development of Elizabeth Bennet, who learns about the repercussions of hasty judgments.",
+        "stock": 50
+    },
+    {
+        "id": 18,
+        "title": "Steve Jobs",
+        "author": "Walter Isaacson",
+        "price": 22.0,
+        "image": "steve_jobs.jpg",
+        "description": "The exclusive biography of Steve Jobs, based on forty interviews with Jobs conducted over two years, as well as interviews with family and colleagues.",
+        "stock": 50
+    },
+    {
+        "id": 19,
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "price": 9.0,
+        "image": "catcher_rye.jpg",
+        "description": "The story of Holden Caulfield, a teenager from New York City who is expelled from his prep school and explores the city while dealing with alienation.",
+        "stock": 50
+    },
+    {
+        "id": 20,
+        "title": "Zero to One",
+        "author": "Peter Thiel",
+        "price": 17.5,
+        "image": "zero_to_one.jpg",
+        "description": "Notes on Startups, or How to Build the Future. A book on entrepreneurship and what it takes to build a successful startup.",
+        "stock": 50
+    }
+]

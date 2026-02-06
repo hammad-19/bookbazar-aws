@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ book.title }} - Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-light bg-white shadow-sm mb-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="{{ url_for('browse_books') }}">← Back to Browse</a>
+            <span class="navbar-text">Logged in as <strong>{{ user.name }}</strong></span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card shadow-sm border-0">
+            <div class="row g-0">
+                <div class="col-md-5 bg-white d-flex align-items-center justify-content-center p-4">
+                    <img src="{{ url_for('static', filename='images/' + book.image) }}" 
+                         class="img-fluid rounded shadow" 
+                         alt="{{ book.title }}" 
+                         style="max-height: 500px; width: auto;"
+                         onerror="this.src='https://via.placeholder.com/300?text=No+Image'">
+                </div>
+                
+                <div class="col-md-7">
+                    <div class="card-body p-5">
+                        <small class="text-uppercase text-muted fw-bold">Book Details</small>
+                        <h1 class="display-5 fw-bold mt-2">{{ book.title }}</h1>
+                        <h4 class="text-muted mb-4">By {{ book.author }}</h4>
+                        
+                        <h2 class="text-primary fw-bold mb-4">${{ book.price }}</h2>
+                        
+                        <div class="mb-5">
+                            <h5>Synopsis</h5>
+                            <p class="lead text-secondary">{{ book.description }}</p>
+                        </div>
+
+                        <div class="mt-4">
+                            {% if session.get('cart') and book.id|string in session['cart'] %}
+                                
+                                <label class="text-muted mb-2">Quantity in Cart:</label>
+                                <div class="d-flex align-items-center">
+                                    <div class="btn-group shadow-sm" role="group">
+                                        <form action="{{ url_for('decrease_cart', book_id=book.id) }}" method="POST">
+                                            <button type="submit" class="btn btn-outline-primary btn-lg px-4 fw-bold">−</button>
+                                        </form>
+                                        
+                                        <button type="button" class="btn btn-primary btn-lg px-4 fw-bold" disabled>
+                                            {{ session['cart'][book.id|string] }}
+                                        </button>
+                                        
+                                        <form action="{{ url_for('add_to_cart', book_id=book.id) }}" method="POST">
+                                            <button type="submit" class="btn btn-outline-primary btn-lg px-4 fw-bold">+</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <small class="text-success mt-2 d-block fw-bold">Item added to your cart ✔</small>
+
+                            {% else %}
+                                <form action="{{ url_for('add_to_cart', book_id=book.id) }}" method="POST">
+                                    <button type="submit" class="btn btn-primary btn-lg px-5 shadow">Add to Cart 🛒</button>
+                                </form>
+                            {% endif %}
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
