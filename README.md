@@ -114,11 +114,11 @@ python seed_db.py
 ### 5. Run the Application
 
 ```bash
-python app.py
+python app_aws.py
 
 ```
 
-Visit `http://localhost:5000` in your browser.
+Visit `http://<PUBLIC IPV4>:5000` in your browser.
 
 ---
 
