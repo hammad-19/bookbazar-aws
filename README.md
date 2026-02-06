@@ -1,6 +1,3 @@
-Here is a professional, high-quality `README.md` file tailored exactly to your project. You can copy and paste this directly into your GitHub repository.
-
----
 
 ```markdown
 # 📚 BookBazar - Cloud-Native E-Commerce Platform
@@ -170,7 +167,5 @@ This project is licensed under the MIT License - see the [LICENSE](https://www.g
 ---
 
 **Developed by Hammad** | Powered by AWS
-
-```
 
 ```
