@@ -158,14 +158,6 @@ To access the backend dashboard, use the predefined admin account:
 
 ---
 
-
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
-
----
-
 **Developed by Hammad** | Powered by AWS
 
 ```
